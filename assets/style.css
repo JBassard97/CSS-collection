@@ -1,0 +1,103 @@
+body {
+    display: grid;
+    place-items: center;
+    place-content: center;
+    text-align: center;
+    background: black;
+}
+
+#wrapper {
+    text-align: center;
+    place-items: center;
+    place-content: center;
+    max-width: max-content;
+    background: linear-gradient(to right, red, rgb(238, 157, 170), white);
+    padding: 5px;
+}
+
+#inner {
+    text-align: center;
+    place-items: center;
+    place-content: center;
+    background: black;
+    color: white;
+    padding: 5px;
+}
+
+h1 {
+
+}
+
+
+#item1 {
+    background-image: linear-gradient(to right, red, blue);
+    color: white;
+}
+
+#item2 {
+    background-image: linear-gradient(to top, green, lime, yellow);
+    /*border-radius can be a maximum of 50% of element width. "Rounds corners"*/
+    border-radius: 10px;
+}
+
+#item3 {
+    background-color: black;
+    animation: pulsate 0.5s infinite alternate;
+        color: #fff;
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 420px aqua,
+            0 0 820px aqua,
+            0 0 920px aqua,
+            0 0 1020px aqua,
+            0 0 151px aqua;
+    }
+
+#item4 {
+    background-color: black;
+        animation: flicker 1.5s infinite alternate;
+        font-family: 'Orbitron', sans-serif;
+        color: whitesmoke;
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 420px red,
+            0 0 820px red,
+            0 0 920px red,
+            0 0 1020px red,
+            0 0 151px red;
+    }
+
+#item5 {
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 40px;
+    text-shadow: 4px 4px 4px gray;
+    color: black;
+    background-color: white;
+}
+
+#item6 {
+    font-family: 'Handjet', sans-serif;
+    font-size: 60px;
+    /* text-shadow: 3px 3px 3px black; */
+    background-image: linear-gradient(180deg, red, rgb(255, 77, 0), orange, yellow);
+    border-color: linear-gradient(180deg, red, rgb(255, 77, 0), orange, yellow);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Start of Buttons section */
+#buttons {
+    max-width: max-content;
+    background: linear-gradient(to right, blue, aqua, white);
+    padding: 5px;
+}
+
+#buttonWrapper {
+    background: black;
+    color: white;
+    padding: 5px;
+}
