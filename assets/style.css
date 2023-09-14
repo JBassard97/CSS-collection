@@ -1,12 +1,18 @@
 body {
-    display: grid;
-    place-items: center;
-    place-content: center;
     text-align: center;
     background: black;
 }
 
+#styleText {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-evenly;
+}
+
 #wrapper {
+    position: center;
     text-align: center;
     place-items: center;
     place-content: center;
@@ -25,6 +31,9 @@ body {
     padding: 5px;
 }
 
+h2 {
+    
+}
 
 #item1 {
     background-image: linear-gradient(to right, red, blue);
@@ -81,12 +90,13 @@ body {
     font-family: 'Handjet', sans-serif;
     font-size: 55px;
     /* text-shadow: 3px 3px 3px maroon; */
-    background-image: linear-gradient(180deg, red, rgb(255, 77, 0), orange, yellow);
+    background-image: linear-gradient(180deg, red, rgb(255, 77, 0), yellow);
     -webkit-background-clip: text;
     color: transparent;
+    animation: rainbow 3s infinite alternate;
 }
 
-/* Start of Buttons section */
+/* Start of Buttons Header */
 #buttonWrapper {
     max-width: max-content;
     background: linear-gradient(to right, blue, aqua, white);
@@ -99,6 +109,18 @@ body {
     color: white;
     padding: 5px;
 }
+/* Start of Button Table */
+table,
+th,
+td {
+    border: 2px solid white;
+}
+
+/* th {
+    background-image: linear-gradient(45deg, magenta, lime);
+    -webkit-background-clip: text;
+    color: transparent;
+} */
 
 #but1 {
     font-size: 1rem;
@@ -117,14 +139,3 @@ body {
     border: 5px solid brown;
 }
 
-table,
-th,
-td {
-    border: 3px solid white;
-}
-
-th {
-    background-image: linear-gradient(45deg, magenta, lime);
-    -webkit-background-clip: text;
-    color: transparent;
-}
